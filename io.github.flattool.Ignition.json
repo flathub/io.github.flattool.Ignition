@@ -8,13 +8,13 @@
     ],
     "command" : "io.github.flattool.Ignition",
     "finish-args" : [
-        "--share=network",
         "--share=ipc",
         "--socket=fallback-x11",
         "--device=dri",
         "--socket=wayland",
         "--filesystem=xdg-config/autostart:create",
         "--filesystem=xdg-data/icons:ro",
+        "--filesystem=xdg-data/applications:ro",
         "--filesystem=xdg-data/flatpak:ro",
         "--filesystem=/var/lib/flatpak:ro",
         "--filesystem=/var/lib/snapd:ro",
@@ -55,8 +55,8 @@
             "sources" : [
                 {
                     "type" : "git",
-                    "tag" : "1.1.1",
-                    "commit" : "4ca3f1e2a9f7523d56af32929803d1b5f9b99867",
+                    "tag" : "1.1.2",
+                    "commit" : "633666d898c4d7cb9373f914c3853e9869fafa3d",
                     "url" : "https://github.com/flattool/ignition.git"
                 }
             ]
