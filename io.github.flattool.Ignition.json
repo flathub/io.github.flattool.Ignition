@@ -53,7 +53,7 @@
 			"builddir": true,
 			"buildsystem": "meson",
 			"config-opts": [
-				"-Dprofile=development"
+				"-Dprofile=default"
 			],
 			"sources": [
 				{
