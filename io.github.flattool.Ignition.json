@@ -4,8 +4,12 @@
 	"runtime-version": "48",
 	"sdk": "org.gnome.Sdk",
 	"sdk-extensions": [
-		"org.freedesktop.Sdk.Extension.node20"
+		"org.freedesktop.Sdk.Extension.node20",
+		"org.freedesktop.Sdk.Extension.typescript"
 	],
+	"build-options": {
+		"append-path" : "/usr/lib/sdk/node20/bin:/usr/lib/sdk/typescript/bin"
+	},
 	"command": "io.github.flattool.Ignition",
 	"finish-args": [
 		"--share=ipc",
@@ -58,8 +62,8 @@
 			"sources": [
 				{
 					"type": "git",
-					"tag" : "2.0.0",
-					"commit": "88733f74c8146ae6a7939740a1c8a9d18a6ec48e",
+					"tag" : "2.1.0",
+					"commit": "251c72a38c4740dee29896cfa0ee353f1d629926",
 					"url" : "https://github.com/flattool/ignition.git"
 				}
 			]
