@@ -62,8 +62,8 @@
 			"sources": [
 				{
 					"type": "git",
-					"tag" : "2.1.0",
-					"commit": "251c72a38c4740dee29896cfa0ee353f1d629926",
+					"tag" : "2.1.1",
+					"commit": "61063d6ac3831df8c9d9c4bd09375c9c69a2edaa",
 					"url" : "https://github.com/flattool/ignition.git"
 				}
 			]
