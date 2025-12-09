@@ -1,14 +1,14 @@
 {
 	"id": "io.github.flattool.Ignition",
 	"runtime": "org.gnome.Platform",
-	"runtime-version": "48",
+	"runtime-version": "49",
 	"sdk": "org.gnome.Sdk",
 	"sdk-extensions": [
-		"org.freedesktop.Sdk.Extension.node20",
+		"org.freedesktop.Sdk.Extension.node22",
 		"org.freedesktop.Sdk.Extension.typescript"
 	],
 	"build-options": {
-		"append-path" : "/usr/lib/sdk/node20/bin:/usr/lib/sdk/typescript/bin"
+		"append-path" : "/usr/lib/sdk/node22/bin:/usr/lib/sdk/typescript/bin"
 	},
 	"command": "io.github.flattool.Ignition",
 	"finish-args": [
@@ -39,31 +39,15 @@
 	],
 	"modules": [
 		{
-			"name": "blueprint-compiler",
-			"buildsystem": "meson",
-			"sources": [
-				{
-					"type": "git",
-					"url": "https://gitlab.gnome.org/jwestman/blueprint-compiler",
-					"tag": "v0.16.0"
-				}
-			],
-			"cleanup": [
-				"*"
-			]
-		},
-		{
 			"name": "ignition",
 			"builddir": true,
 			"buildsystem": "meson",
-			"config-opts": [
-				"-Dprofile=default"
-			],
+			"config-opts": ["-Dprofile=default"],
 			"sources": [
 				{
 					"type": "git",
-					"tag" : "2.1.2",
-					"commit": "9ec9133bbe89e85198781d80e23df8611c85275a",
+					"tag" : "2.2.0",
+					"commit": "7f67bedd2f2c29af3cedfd8ab62ebc1511abc2c5",
 					"url" : "https://github.com/flattool/ignition.git"
 				}
 			]
