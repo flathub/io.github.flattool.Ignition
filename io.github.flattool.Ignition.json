@@ -39,6 +39,18 @@
 	],
 	"modules": [
 		{
+			"name": "jasmine-gjs",
+			"buildsystem": "meson",
+			"sources": [
+				{
+					"type": "git",
+					"url": "https://github.com/ptomato/jasmine-gjs.git",
+					"branch": "master"
+				}
+			],
+			"cleanup": ["*"]
+		},
+		{
 			"name": "ignition",
 			"builddir": true,
 			"buildsystem": "meson",
@@ -46,9 +58,9 @@
 			"sources": [
 				{
 					"type": "git",
-					"tag" : "2.2.0",
+					"tag" : "2.3.0",
 					"commit": "7f67bedd2f2c29af3cedfd8ab62ebc1511abc2c5",
-					"url" : "https://github.com/flattool/ignition.git"
+					"url" : "80385c01737e25f0ca46911bfbc2eae326a33c43"
 				}
 			]
 		}
