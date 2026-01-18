@@ -44,8 +44,9 @@
 			"sources": [
 				{
 					"type": "git",
-					"url": "https://github.com/ptomato/jasmine-gjs.git",
-					"branch": "master"
+					"tag": "3.10.1",
+					"commit": "0b419384c7446ae74cd2fac295b9db5a18ce4ab1",
+					"url": "https://github.com/ptomato/jasmine-gjs.git"
 				}
 			],
 			"cleanup": ["*"]
