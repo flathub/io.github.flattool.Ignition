@@ -7,9 +7,6 @@
 		"org.freedesktop.Sdk.Extension.node22",
 		"org.freedesktop.Sdk.Extension.typescript"
 	],
-	"build-options": {
-		"append-path" : "/usr/lib/sdk/node22/bin:/usr/lib/sdk/typescript/bin"
-	},
 	"command": "io.github.flattool.Ignition",
 	"finish-args": [
 		"--share=ipc",
@@ -46,7 +43,11 @@
 					"type": "git",
 					"tag": "3.10.1",
 					"commit": "0b419384c7446ae74cd2fac295b9db5a18ce4ab1",
-					"url": "https://github.com/ptomato/jasmine-gjs.git"
+					"url": "https://github.com/ptomato/jasmine-gjs.git",
+					"x-checker-data": {
+						"type": "git",
+						"tag-pattern": "^([\\d.]+)$"
+					}
 				}
 			],
 			"cleanup": ["*"]
@@ -56,12 +57,19 @@
 			"builddir": true,
 			"buildsystem": "meson",
 			"config-opts": ["-Dprofile=default"],
+			"build-options": {
+				"append-path": "/usr/lib/sdk/node22/bin:/usr/lib/sdk/typescript/bin"
+			},
 			"sources": [
 				{
 					"type": "git",
 					"tag" : "2.3.1",
 					"commit": "76106e2de244c0b4ead570e41591e68913e92c71",
-					"url" : "https://github.com/flattool/ignition.git"
+					"url" : "https://github.com/flattool/ignition.git",
+					"x-checker-data": {
+						"type": "git",
+						"tag-pattern": "^([\\d.]+)$"
+					}
 				}
 			]
 		}
