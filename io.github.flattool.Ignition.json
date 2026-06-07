@@ -24,7 +24,10 @@
 		"--filesystem=/var/lib/snapd:ro",
 		"--filesystem=/snap:ro",
 		"--filesystem=host-os:ro",
-		"--filesystem=host-etc:ro"
+		"--filesystem=host-etc:ro",
+		"--filesystem=/nix/store:ro",
+		"--filesystem=/run/current-system/sw:ro",
+		"--filesystem=home/.nix-profile/share:ro"
     ],
 	"cleanup": [
 		"/include",
@@ -39,19 +42,6 @@
 	],
 	"modules": [
 		{
-			"name": "jasmine-gjs",
-			"buildsystem": "meson",
-			"sources": [
-				{
-					"type": "git",
-					"tag": "3.10.1",
-					"commit": "0b419384c7446ae74cd2fac295b9db5a18ce4ab1",
-					"url": "https://github.com/ptomato/jasmine-gjs.git"
-				}
-			],
-			"cleanup": ["*"]
-		},
-		{
 			"name": "ignition",
 			"builddir": true,
 			"buildsystem": "meson",
@@ -59,8 +49,8 @@
 			"sources": [
 				{
 					"type": "git",
-					"tag" : "2.4.0",
-					"commit": "cdc6b39664300ff76faf11fea1bfd175fec259aa",
+					"tag" : "2.4.1",
+					"commit": "1b79f98814f4dafb603c2535eb05fd1615951820",
 					"url" : "https://github.com/flattool/ignition.git"
 				}
 			]
